@@ -1,0 +1,412 @@
+body{
+    background: #F7F8F9;
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Контейнер для видео и затемнения */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Само видео */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+/* Затемнение */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачность затемнения */
+    z-index: 2;
+}
+
+/* Контент поверх */
+.content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    top: 0;
+    transform: translateY(-0);
+    font-size: 2rem;
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.52);
+
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+}
+.header__burger{
+    display: none;
+}
+.menu__list li{
+    list-style-type: none;
+    margin-left: 40px;
+    display: flex;
+}
+.header__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+.header__logo{
+    width: 255px;
+
+}
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.backText{
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+/* Стиль для контента */
+.content2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Заголовок */
+.hero-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffb700, #dffe92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Планшеты (ширина до 768px) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Телефоны (ширина до 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+.scroll-down {
+
+    animation: blink 1.2s infinite, bounce 2s infinite;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    margin: 2em auto 0;
+}
+
+.scroll-down img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+/* Моргание */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+/* Плавное подпрыгивание */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* Базовая стилизация секции */
+.concert-announcement {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Видео */
+.concert-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Затемнение */
+.concert-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+    z-index: 2;
+}
+
+/* Заголовки и текст */
+.concert-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideUp 1s ease-out;
+}
+
+.concert-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.concert-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- Инфо-секция --- */
+.info-section {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(14, 14, 14, 0.96));
+    color: #fff;
+    padding: 3rem 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: gold;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ccc;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.section {
+    margin-bottom: 40px;
+    animation: fadeInUp 1.2s ease-in;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ffdf80;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: gold;
+    font-weight: bold;
+}
+
+.btn {
+    background: gold;
+    color: #000;
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+    .info__content{
+        width: 970px;
+        margin: 0 auto;
+    }
+    .header__logo{
+        width: 200px;
+    }
+    .wrapper{
+        height: 85px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .info__content{
+        width: 750px;
+        margin: 0 auto;
+    }
+    .header__logo{
+        width: 150px;
+    }
+    .wrapper{
+        height: 70px;
+    }
+    .header__link{
+        font-size: 19px;
+    }
+    .info{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 576px;
+    }
+    .info__content{
+        width: 550px;
+        margin: 0 auto;
+    }
+    .header__logo{
+        width: 100px;
+    }
+    .wrapper{
+        height: 60px;
+    }
+    .header__link{
+        font-size: 17px;
+    }
+    .main__title{
+        font-size: 24px;
+
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        max-width: 365px;
+    }
+    .header__logo{
+        width: 60px;
+    }
+    .header__link{
+        font-size: 11px;
+    }
+
+    .menu__list li{
+        margin-left: 20px;
+    }
+
+
+}
+@media (max-width: 356px) {
+    .container{
+        max-width: none;
+        margin: 0;
+    }
+
+    .header__logo{
+        width: 30px;
+    }
+    .header__link{
+        font-size: 10px;
+    }
+
+    .menu__list li{
+        margin-left: 10px;
+    }
+}

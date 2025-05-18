@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mango Madness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="items/logo.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<section class="video">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="items/background.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="" >
+                            <img class="header__logo" src="items/logo.png" alt="logo ">
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="menu__list">
+                                <li><a href="#" class="header__link">STORY</a></li>
+                                <li><a href="#" class="header__link">LOCATION</a></li>
+                                <li><a href="#" class="header__link">NEWSLETTER</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="content2">
+                <h1 class="hero-title">Вечеринка Лета<br>Issyk-Kul<br>Launch Party</h1>
+                <p class="hero-subtitle">7 июня <br>Чолпон-Ата <br> Берег легенды</p>
+                <div class="scroll-down">
+                    <img src="items/down-arrow.png" alt="Scroll down" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="concert-announcement">
+        <!-- Видео без атрибута muted -->
+        <video id="concertVideo" autoplay loop class="concert-video">
+            <source src="items/invitation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <div class="concert-overlay"></div>
+</section>
+
+<!-- Инфо-секция под видео -->
+<section class="info-section">
+    <div class="container">
+        <h1>Главное Событие Лета</h1>
+        <h2>7 июня | Чолпон-Ата | Побережье Иссык-Куля</h2>
+
+        <div class="section">
+            <div class="section-title">На сцене</div>
+            <p><span class="highlight">MARS</span> — «Аяна», «Кыймылдайт» и премьеры новых треков</p>
+            <p><span class="highlight">OBERON</span> — «Жалгыз океан», «Колдун жеги толкун» и лирика, которую вы ещё не слышали</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Чем удивим?</div>
+            <ul style="list-style: none; padding: 0;">
+                <li>✨ DJ-сеты под закат и после</li>
+                <li>✨ Welcome drink & фотозона уровня fashion-журнала</li>
+                <li>✨ Конкурсы, подарки и рекламная съёмка — стань лицом сезона</li>
+                <li>✨ Звёздные гости и атмосферный вайб</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <p>Будь там, где <span class="highlight">лето начинается красиво</span>.</p>
+            <p>Билеты скоро в продаже — следи за анонсами.</p>
+        </div>
+
+        <button class="btn">Хочу быть там</button>
+
+        <footer>
+            Чолпон-Ата • 7 июня 2025 • Старт в 19:00
+        </footer>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
