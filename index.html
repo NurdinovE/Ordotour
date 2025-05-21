@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
-    <title>Mango Madness</title>
+    <title>ORDO-TOUR</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
@@ -37,9 +37,8 @@
                         </a>
                         <nav class="header__menu">
                             <ul class="menu__list">
-                                <li><a href="#" class="header__link">STORY</a></li>
-                                <li><a href="#" class="header__link">LOCATION</a></li>
-                                <li><a href="#" class="header__link">NEWSLETTER</a></li>
+                                <li><a href="#announcement" class="header__link">Объявление</a></li>
+                                <li><a href="#details" class="header__link">ПОДРОБНЕЕ</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -55,7 +54,7 @@
         </div>
     </div>
 </section>
-<section class="concert-announcement">
+<section id="announcement" class="concert-announcement">
         <!-- Видео без атрибута muted -->
         <video id="concertVideo" autoplay loop class="concert-video">
             <source src="items/invitation.mp4" type="video/mp4">
@@ -65,7 +64,7 @@
 </section>
 
 <!-- Инфо-секция под видео -->
-<section class="info-section">
+<section id="details" class="info-section">
     <div class="container">
         <h1>Главное Событие Лета</h1>
         <h2>7 июня | Чолпон-Ата | Побережье Иссык-Куля</h2>
@@ -90,9 +89,14 @@
             <p>Будь там, где <span class="highlight">лето начинается красиво</span>.</p>
             <p>Билеты скоро в продаже — следи за анонсами.</p>
         </div>
-
-        <button class="btn">Хочу быть там</button>
-
+        <div class="button-group">
+            <a href="https://wa.me/996700123456" target="_blank" class=" btn whatsapp-button">
+                Хочу быть там
+            </a>
+            <a href="https://instagram.com/ordotour" target="_blank" class="instagram-button">
+                Следить в Instagram
+            </a>
+        </div>
         <footer>
             Чолпон-Ата • 7 июня 2025 • Старт в 19:00
         </footer>
